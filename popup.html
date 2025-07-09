@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEO Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <div class="header">
+      <input id="keywordInput" type="text" placeholder="Enter keyword..." autocomplete="off" />
+      <button id="searchBtn">Analyze</button>
+    </div>
+
+    <ul id="suggestions"></ul>
+
+    <div class="filters">
+      <label>Min CPC: <input type="number" id="minCPC" value="0" step="0.1" /></label>
+    </div>
+
+    <div class="actions">
+      <button id="exportCSVBtn">Export CSV</button>
+    </div>
+
+    <div id="resultSection" class="card-container"></div>
+  </div>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
